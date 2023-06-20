@@ -32,20 +32,24 @@ public class Q4 {
     }
     
     //add or update a new value for the key
-    public void put(String key, String value){
+    public boolean put(String key, String value){
         if(size==0){
             list[0] = new Q4Entry(key, value);
-        }else{
-            //check if the key exists
-            for(int i=0; i<size; i++){
-                //if key existx, update the value
-                if(list[i].getKey().equals(key))
-                    list[i].setValue(value);
-            }
-            //if key doesn't exists, create a new entry
-            list[size] = new Q4Entry(key, value);
+            size++;
+            return true;
         }
+        //check if the key exists
+        for(int i=0; i<size; i++){
+            //if key existx, update the value
+            if(list[i].getKey().equals(key)){
+                list[i].setValue(value);
+                return true;
+            }
+        }
+        //if key doesn't exists, create a new entry
+        list[size] = new Q4Entry(key, value);
         size++;
+        return true;
     }
     
 }
