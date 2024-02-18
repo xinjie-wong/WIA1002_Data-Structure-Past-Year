@@ -1,3 +1,3 @@
-# WIA-1002---Past-Year-Papers
+<h1>WIA 1002 Data Structure - Past Year Answers</h1>
 
-This is my solutions for WIA 1002 past year papers
+This is my solutions to WIA 1002 Data Structure past year papers. Feel free to let me know if there's any mistakes
